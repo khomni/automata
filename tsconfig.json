@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "checkJs": true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "sourceMap": false,
+    "target": "ESNext",
+    "baseUrl": "./",
+    "paths": {
+      "@src*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "src/**/*.test.ts"]
+}
