@@ -5,7 +5,8 @@
   "main": "./lib/index.js",
   "scripts": {
     "build": "build:definitions && build:compile",
-    "build:definitions": "./node_modules/.bin/tsc",
+    "build:check": "./node_modules/.bin/tsc",
+    "build:definitions": "./node_modules/.bin/tsc --declaration --emitDeclarationOnly",
     "build:compile": "./node_modules/.bin/babel src --out-dir ./lib --extensions '.ts' --ignore './src/**/*.test.ts' --ignore './src/**/*.d.ts' --source-maps",
     "test": "jest"
   },

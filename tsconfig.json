@@ -9,15 +9,13 @@
     "module": "es6",
     "moduleResolution": "node",
     "noImplicitAny": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "target": "ESNext",
     "baseUrl": "./",
     "paths": {
       "@src*": ["./src/*"]
-    },
-    "declaration": true,
-    "emitDeclarationOnly": true
+    }
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "src/**/*.test.ts"]
 }
